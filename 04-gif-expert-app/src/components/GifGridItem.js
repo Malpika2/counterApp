@@ -13,3 +13,7 @@ export const GifGridItem = ({title, url}) => {
     </div>
     )
 }
+/*
+    hacer pruebas
+    
+*/
