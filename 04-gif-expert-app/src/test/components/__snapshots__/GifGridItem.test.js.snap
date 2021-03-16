@@ -4,7 +4,12 @@ exports[`Debe imostrar el componente correctamente Probar componenete GifGridIte
 <div
   className="card animate__animated animate__fadeIn "
 >
-  <img />
-  <br />
+  <img
+    alt="Soy un titulo"
+    src="http://unaimagen.com"
+  />
+  <p>
+    Soy un titulo
+  </p>
 </div>
 `;
