@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types';
 
-export const AddCategory = ({setCategory}) => {
+export const AddCategory = ({setCategories}) => {
 
     const [inputValue, setInputValue] = useState('');
 
@@ -11,7 +11,7 @@ export const AddCategory = ({setCategory}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if( inputValue.trim().length>0){
-            setCategory( categs  => [ inputValue,...categs] );
+            setCategories( categs  => [ inputValue,...categs] );
             setInputValue('');
         }
     }
@@ -29,5 +29,5 @@ export const AddCategory = ({setCategory}) => {
 }
 
 AddCategory.propTypes = {
-    setCategory: PropTypes.func.isRequired
+    setCategories: PropTypes.func.isRequired
 }

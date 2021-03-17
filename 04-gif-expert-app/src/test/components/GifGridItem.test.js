@@ -25,7 +25,6 @@ describe('Debe imostrar el componente correctamente', () => {
         const className = div.prop('className');
 
         expect( className.includes('animate__fadeIn') ).toBe(true);
-        
     })
     
     
